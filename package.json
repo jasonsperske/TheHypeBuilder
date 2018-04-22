@@ -1,0 +1,30 @@
+{
+  "name": "thehypebuilder",
+  "version": "1.0.0",
+  "description": "a simple hype builder for live streamers",
+  "main": "main.js",
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "electron": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-flatten": "^0.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "materialize-css": "^0.100.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "twitch",
+    "youtube",
+    "gaming",
+    "streaming"
+  ],
+  "author": "Jason Sperske",
+  "license": "ISC"
+}

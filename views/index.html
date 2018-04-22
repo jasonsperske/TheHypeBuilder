@@ -1,0 +1,20 @@
+<head>
+  <link rel="stylesheet" href="style/hype.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="valign-wrapper">
+      <center class="animated infinite bounce"><h1>Build the Hype!</h1></center>
+    </div>
+    <button id='settings' class="waves-effect waves-light btn">settings</button>
+  </div>
+  <script src="js/hype.min.js"></script>
+  <script>
+    const {ipcRenderer} = require('electron')
+    const settings = $('#settings')
+    settings.on('click', () => {
+      ipcRenderer.send('settings-open', {})
+    })
+  </script>
+</body>
