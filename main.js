@@ -7,12 +7,17 @@ app.disableHardwareAcceleration()
 
 let window
 
-ipcMain.on('settings-open', (event, arg) => {
+ipcMain.on('ready', () => {
+  window.webContents.send('loaded-settings', require('./settings.json'))
+})
+
+ipcMain.on('open-settings', (event, arg) => {
   console.log('opening settings', arg)
 })
 
 app.on('ready', () => {
   window = new BrowserWindow({
+    title: 'Build the Hype',
     width: 800,
     height: 600
   })
