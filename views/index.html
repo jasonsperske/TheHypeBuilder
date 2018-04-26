@@ -4,17 +4,14 @@
 <body>
   <video id="video-background" preload muted autoplay loop></video>
   <div class="container">
-    <h1 class="animated infinite bounce center-align">Build the Hype!</h1>
-    <button id='settings' class="waves-effect waves-light btn">settings</button>
+    <h1>Lunch Break with</h1>
+    <h1>Sound Test</h1>
   </div>
   <script src="js/hype.min.js"></script>
   <script>
     const {ipcRenderer} = require('electron')
     const settings = $('#settings')
 
-    settings.on('click', () => {
-      ipcRenderer.send('open-settings', {})
-    })
     ipcRenderer.send('ready')
 
     ipcRenderer.on('loaded-settings', (e, settings) => {

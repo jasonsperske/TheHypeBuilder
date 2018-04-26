@@ -18,8 +18,8 @@ ipcMain.on('open-settings', (event, arg) => {
 app.on('ready', () => {
   window = new BrowserWindow({
     title: 'Build the Hype',
-    width: 800,
-    height: 600
+    width: 1280,
+    height: 720
   })
   window.loadURL(url.format({
     pathname: path.join(__dirname, 'views/index.html'),
