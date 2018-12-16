@@ -27,7 +27,7 @@ app.on('ready', () => {
     slashes: true
   }))
 
-  // window.setMenu(null)
+  window.setMenu(null)
 
   window.on('close', () => {
     window = null
